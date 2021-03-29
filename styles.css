@@ -1,0 +1,61 @@
+/* Styling for static navbar---Used black/greys/white for a cleaner look */
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Styling for all list items */
+li {
+    float: left;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Styling for anchor tags of each list item including the button that triggers the dropdown menu*/
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Styling for any navigation/dropdown menu item that is hovered upon by the user*/
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+/* Ensure that dropdown menu with list option vertical */
+li.dropdown {
+    display: inline-block;
+}
+
+/*Styling of dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 117px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*Styling of anchor tags for dropdown menu */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/*Moved contact element to far right corner as it is a widely-utilized location for this link*/
+.contact{
+    float:right;
+}
+
+/*Changes anchor tag background to white to make it distinct which item is being hovered upon by the user*/
+.dropdown-content a:hover {background-color: white}
+  
